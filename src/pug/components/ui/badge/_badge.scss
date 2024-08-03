@@ -1,0 +1,55 @@
+.badge {
+  @extend %flex-column;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+
+  img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__header {
+    @extend %flex-wrap;
+
+    gap: var(--space-xs);
+    justify-content: flex-end;
+    margin-bottom: var(--space-m);
+
+    img {
+      width: 40px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+    @extend %flex-column;
+
+    strong {
+      font-size: var(--fs-md);
+      color: var(--dark);
+    }
+
+    span {
+      font-family: var(--secondary-font);
+      font-size: var(--fs-sm);
+      color: var(--dark);
+    }
+  }
+
+  &:has(.badge__header),
+  &:has(.badge__content) {
+    padding: clamp(8px, 1.2vw, 20px) clamp(12px, 1.4vw, 24px);
+  }
+
+  &:has(.badge__header) {
+    .badge__content {
+      margin-top: auto;
+    }
+  }
+}

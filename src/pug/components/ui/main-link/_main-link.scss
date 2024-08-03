@@ -1,0 +1,13 @@
+.main-link {
+  @extend %btn-reset;
+  @extend %flex-center;
+
+  width: fit-content;
+  min-width: 50px;
+  min-height: 48px;
+  font-size: clamp(18px, 3vw, 0.212em);
+  padding: var(--space-xs) var(--space-m);
+  border-radius: 30px;
+  background-color: var(--primary);
+  color: var(--dark);
+}

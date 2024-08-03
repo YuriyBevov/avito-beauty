@@ -1,0 +1,17 @@
+mixin badge(data)
+  .badge(class= data.bgColor ? data.bgColor : 'bg-primary')
+    if data.icons
+      .badge__header
+        each icon in data.icons
+          img(src=`./assets/images/${icon}.svg` alt="Иконка" width="40" height="40")
+
+    if data.img
+      img(src=`./assets/images/${data.img.name}` alt= data.img.alt width= data.img.width height= data.img.height)
+
+    if data.content
+      .badge__content
+        if data.content.bold
+          strong!= data.content.bold
+
+        if data.content.text
+          span!= data.content.text

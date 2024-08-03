@@ -1,0 +1,26 @@
+:root {
+  --primary-font: 'Aeroport', sans-serif;
+  --secondary-font: 'Manrope', sans-serif;
+
+  // font sizes
+  --fs-xl: 5em; // 80px
+  --fs-lg: 4em; // 64px
+  --fs-md: 3em; // 48px
+  --fs-sm: 1.5em; // 24px
+  --fs-xs: 1em; // 16px
+  --fs-xxs: 0.75em; // 12px
+
+  // font weights
+  --fw-h: 900; // heavy
+  --fw-xb: 800; // extra bold
+  --fw-b: 700; // bold
+  --fw-sb: 600; // semi bold
+  --fw-m: 500; // medium
+  --fw-r: 400; // regular
+  --fw-l: 300; // light
+  --fw-xl: 200; // extra light
+  --fw-t: 100; // thin
+
+  // line heights
+  --base-line-height: 1.2;
+}

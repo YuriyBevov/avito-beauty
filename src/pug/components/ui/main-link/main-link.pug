@@ -1,0 +1,5 @@
+mixin main-link(data)
+  a(href= data.url ? data.url : '#' class= data.modifier ? data.modifier : null rel="noopener nofollow norefferer" target="_blank").main-link
+    span!= data.text
+
+

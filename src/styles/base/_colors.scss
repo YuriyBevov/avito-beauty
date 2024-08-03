@@ -1,0 +1,91 @@
+.color {
+  &-primary {
+    color: var(--primary) !important;
+  }
+
+  &-secondary {
+    color: var(--secondary) !important;
+  }
+
+  &-success {
+    color: var(--success) !important;
+  }
+
+  &-warning {
+    color: var(--warning) !important;
+  }
+
+  &-info {
+    color: var(--info) !important;
+  }
+
+  &-danger {
+    color: var(--danger) !important;
+  }
+
+  &-light {
+    color: var(--light) !important;
+  }
+
+  &-dark {
+    color: var(--dark) !important;
+  }
+
+  &-muted {
+    color: var(--muted) !important;
+  }
+
+  &-white {
+    color: var(--white) !important;
+  }
+
+  &-black {
+    color: var(--black) !important;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: var(--primary) !important;
+  }
+
+  &-secondary {
+    background-color: var(--secondary) !important;
+  }
+
+  &-success {
+    background-color: var(--success) !important;
+  }
+
+  &-warning {
+    background-color: var(--warning) !important;
+  }
+
+  &-info {
+    background-color: var(--info) !important;
+  }
+
+  &-danger {
+    background-color: var(--danger) !important;
+  }
+
+  &-light {
+    background-color: var(--light) !important;
+  }
+
+  &-dark {
+    background-color: var(--dark) !important;
+  }
+
+  &-muted {
+    background-color: var(--muted) !important;
+  }
+
+  &-white {
+    background-color: var(--white) !important;
+  }
+
+  &-black {
+    background-color: var(--black) !important;
+  }
+}

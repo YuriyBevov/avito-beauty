@@ -1,0 +1,10 @@
+.logo {
+  @extend %flex-center;
+
+  img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    object-fit: contain;
+  }
+}

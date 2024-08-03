@@ -1,0 +1,30 @@
+.header {
+  padding: var(--space-xxl) 0;
+  background-color: transparent;
+  container: header / inline-size;
+
+  &__container {
+    @extend %flex-align;
+
+    // align-items: center;
+    gap: var(--space-l);
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  &__side {
+    @extend %flex-wrap;
+
+    gap: clamp(var(--space-s), 3vw, var(--space-l));
+
+    @container header (max-width: 1240px) {
+      flex-direction: column;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
