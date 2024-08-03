@@ -1,9 +1,10 @@
 .logo {
   @extend %flex-center;
 
+  width: clamp(100px, 20vw, 240px);
+
   img {
     width: 100%;
-    max-width: 240px;
     height: auto;
     object-fit: contain;
   }

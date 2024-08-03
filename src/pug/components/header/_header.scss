@@ -6,7 +6,6 @@
   &__container {
     @extend %flex-align;
 
-    // align-items: center;
     gap: var(--space-l);
   }
 
@@ -19,11 +18,21 @@
 
     gap: clamp(var(--space-s), 3vw, var(--space-l));
 
-    @container header (max-width: 1240px) {
-      flex-direction: column;
+    .main-link {
+      svg {
+        display: none;
+      }
+    }
 
-      a {
-        width: 100%;
+    @container header (max-width: 1240px) {
+      .main-link {
+        svg {
+          display: block;
+        }
+
+        span {
+          display: none;
+        }
       }
     }
   }

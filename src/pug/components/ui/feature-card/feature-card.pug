@@ -1,0 +1,4 @@
+mixin feature-card(data)
+  .feature-card
+    img(src=`./assets/images/icon-${data.icon}.svg` alt="Иконка" width="60" height="60")
+    span.base-text!= data.text

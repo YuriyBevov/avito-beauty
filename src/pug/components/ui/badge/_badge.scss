@@ -30,21 +30,22 @@
   &__content {
     @extend %flex-column;
 
+    gap: 8px;
+
     strong {
-      font-size: var(--fs-md);
+      font-size: 48px;
       color: var(--dark);
     }
 
     span {
       font-family: var(--secondary-font);
-      font-size: var(--fs-sm);
       color: var(--dark);
     }
   }
 
   &:has(.badge__header),
   &:has(.badge__content) {
-    padding: clamp(8px, 1.2vw, 20px) clamp(12px, 1.4vw, 24px);
+    padding: clamp(14px, 1.2vw, 20px) clamp(16px, 1.4vw, 24px);
   }
 
   &:has(.badge__header) {

@@ -9,3 +9,11 @@
 %shaker {
   animation: shaker 0.5s ease-in-out;
 }
+
+%section-outer-offset {
+  padding: clamp(20px, 3vw, 40px) 0;
+}
+
+%section-inner-offset {
+  padding: clamp(30px, 5vw, 80px) 0;
+}

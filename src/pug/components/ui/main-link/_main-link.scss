@@ -1,7 +1,8 @@
 .main-link {
   @extend %btn-reset;
-  @extend %flex-center;
+  @extend %flex-align;
 
+  gap: var(--space-s);
   width: fit-content;
   min-width: 50px;
   min-height: 48px;

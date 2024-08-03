@@ -1,5 +1,8 @@
 mixin main-link(data)
   a(href= data.url ? data.url : '#' class= data.modifier ? data.modifier : null rel="noopener nofollow norefferer" target="_blank").main-link
+    if data.icon
+      svg(width="24" height="24")
+        use(xlink:href=`./assets/svg-sprite.svg#icon-${data.icon}`)
     span!= data.text
 
 

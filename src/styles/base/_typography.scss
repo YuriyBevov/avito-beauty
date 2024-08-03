@@ -15,8 +15,7 @@ p {
   font-weight: var(--fw-r);
 }
 
-h1,
-.main-title {
+h1 {
   font-size: 5.75em;
 }
 
@@ -43,6 +42,17 @@ h6 {
 .main-title {
   display: inline-block;
   text-transform: uppercase;
+  font-size: clamp(32px, 6.4vw, 5.75em);
+}
+
+.base-title {
+  display: inline-block;
+  font-size: clamp(32px, 3.2vw, var(--fs-lg));
+  text-transform: uppercase;
+}
+
+.base-text {
+  font-size: clamp(16px, 1.4vw, var(--fs-sm));
 }
 
 .text-italic {
