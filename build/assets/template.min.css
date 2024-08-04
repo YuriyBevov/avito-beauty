@@ -1143,7 +1143,7 @@ picture {
 }
 .speaker-card__text {
   font-size: clamp(16px, 3vw, var(--fs-sm));
-  color: #595959;
+  color: var(--white);
 }
 .speaker-card .badge {
   padding: 8px 16px;
@@ -1154,10 +1154,6 @@ picture {
   width: -moz-fit-content;
   width: fit-content;
 }
-.speaker-card .badge__content span {
-  color: var(--white);
-}
-
 .hero__grid-layout {
   display: -ms-grid;
   display: grid;
