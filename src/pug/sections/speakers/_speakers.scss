@@ -20,7 +20,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-xxl);
+    gap: 60px var(--space-xxl);
     margin-bottom: clamp(40px, 4vw, 70px);
 
     @container container (max-width: 960px) {
@@ -33,6 +33,7 @@
 
     @container container (max-width: 380px) {
       grid-template-columns: 1fr;
+      gap: 80px;
     }
   }
 

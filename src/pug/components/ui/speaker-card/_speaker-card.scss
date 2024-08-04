@@ -29,9 +29,8 @@
 
   &__text {
     font-size: clamp(16px, 3vw, var(--fs-sm));
-
-    // color: #595959;
-    color: var(--white);
+    color: #595959;
+    // color: var(--white);
   }
 
   .badge {
@@ -40,7 +39,7 @@
     width: fit-content;
 
     &__content span {
-      // color: var(--white);
+      color: var(--white);
     }
   }
 }
