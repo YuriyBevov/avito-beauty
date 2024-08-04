@@ -2,7 +2,10 @@ include ../badge/badge
 
 mixin speaker-card(data)
   .speaker-card
-    img(src=`./assets/images/${data.img}` alt="Спикер" width="360" height="360")
+    picture
+      source(srcset=`./assets/images/${data.img}.webp` type="image/webp")
+      img(src=`./assets/images/${data.img}.png` alt="Спикер" width="360" height="360")
+    //- img(src=`./assets/images/${data.img}` alt="Спикер" width="360" height="360")
 
     span.speaker-card__name!= data.name
     +badge({

@@ -36,6 +36,7 @@
       height: 100%;
       margin-left: auto;
       border-radius: 30px;
+      overflow: hidden;
     }
 
     .hero__badges {
@@ -140,6 +141,7 @@
 
       .hero__poster {
         order: 3;
+        width: 100%;
         max-width: 100%;
         height: 100vw;
         max-height: 300px;

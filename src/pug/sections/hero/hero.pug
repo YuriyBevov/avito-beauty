@@ -9,12 +9,14 @@ section.hero
 
       include ../../components/announce-block/announce
 
-      img(src="./assets/images/hero-img-big@1x.png" alt="Девушка" width="480" height="660").hero__poster
+      picture.hero__poster
+        source(srcset=`./assets/images/hero-img-big@1x.webp` type="image/webp")
+        img(src=`./assets/images/hero-img-big@1x.png` alt="Девушка" width="480" height="660")
 
       .hero__badges
         +badge({
           img: {
-            name: 'hero-img-small-left@1x.png',
+            name: 'hero-img-small-left@1x',
             alt: 'Глаза',
             width: 420,
             height: 146
@@ -47,7 +49,7 @@ section.hero
         })
         +badge({
           img: {
-            name: 'hero-img-small-right@1x.png',
+            name: 'hero-img-small-right@1x',
             alt: 'Улыбка',
             width: 420,
             height: 200

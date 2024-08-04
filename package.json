@@ -58,10 +58,6 @@
     "stylelint-scss": "^6.3.0"
   },
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7",
-    "gsap": "file:gsap-bonus.tgz",
-    "imagesloaded": "^5.0.0",
-    "imask": "^7.6.1",
-    "swiper": "^11.1.4"
+    "imagesloaded": "^5.0.0"
   }
 }

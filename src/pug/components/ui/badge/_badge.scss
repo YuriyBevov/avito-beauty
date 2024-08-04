@@ -6,6 +6,11 @@
   border-radius: 30px;
   overflow: hidden;
 
+  picture {
+    display: flex;
+    height: 100%;
+  }
+
   img {
     display: flex;
     height: 100%;

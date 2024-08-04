@@ -26,6 +26,11 @@
       rel="stylesheet"
       href="./assets/template.min.css"
     >
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-img-big@1x.png"
+    >
     <script
       defer="defer"
       src="./assets/bundle.min.js"
@@ -54,7 +59,7 @@
       </div>
     </div>
     <header class="header">
-      <div class="container header__container">
+      <div class="container-fluid header__container">
         <a
           class="logo"
           href="index.html"
@@ -129,21 +134,32 @@
                 3-я ул. Ямского поля, д. 2 к 22
               </address>
             </div>
-            <img
-              class="hero__poster"
-              src="./assets/images/hero-img-big@1x.png"
-              alt="Девушка"
-              width="480"
-              height="660"
-            >
+            <picture class="hero__poster">
+              <source
+                srcset="./assets/images/hero-img-big@1x.webp"
+                type="image/webp"
+              >
+              <img
+                src="./assets/images/hero-img-big@1x.png"
+                alt="Девушка"
+                width="480"
+                height="660"
+              >
+            </picture>
             <div class="hero__badges">
               <div class="badge bg-primary">
-                <img
-                  src="./assets/images/hero-img-small-left@1x.png"
-                  alt="Глаза"
-                  width="420"
-                  height="146"
-                >
+                <picture>
+                  <source
+                    srcset="./assets/images/hero-img-small-left@1x.webp"
+                    type="image/webp"
+                  >
+                  <img
+                    src="./assets/images/hero-img-small-left@1x.png"
+                    alt="Глаза"
+                    width="420"
+                    height="146"
+                  >
+                </picture>
               </div>
               <div class="badge bg-success">
                 <div class="badge__content">
@@ -196,12 +212,18 @@
                 </div>
               </div>
               <div class="badge bg-primary">
-                <img
-                  src="./assets/images/hero-img-small-right@1x.png"
-                  alt="Улыбка"
-                  width="420"
-                  height="200"
-                >
+                <picture>
+                  <source
+                    srcset="./assets/images/hero-img-small-right@1x.webp"
+                    type="image/webp"
+                  >
+                  <img
+                    src="./assets/images/hero-img-small-right@1x.png"
+                    alt="Улыбка"
+                    width="420"
+                    height="200"
+                  >
+                </picture>
               </div>
               <div class="badge bg-info">
                 <div class="badge__header">
@@ -464,12 +486,18 @@
             <ul class="speakers__list">
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-1-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-1-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-1-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Владимир Владимиров
                   </span>
@@ -487,12 +515,18 @@
               </li>
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-2-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-2-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-2-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Дмитриев
                   </span>
@@ -510,12 +544,18 @@
               </li>
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-3-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-3-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-3-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Александра Иванова
                   </span>
@@ -533,12 +573,18 @@
               </li>
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-4-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-4-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-4-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Михаил Константинов
                   </span>
@@ -556,12 +602,18 @@
               </li>
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-5-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-5-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-5-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Василиса Васильева
                   </span>
@@ -579,12 +631,18 @@
               </li>
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-6-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-6-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-6-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Никита Павлов
                   </span>
@@ -602,12 +660,18 @@
               </li>
               <li class="speakers__list-item">
                 <div class="speaker-card">
-                  <img
-                    src="./assets/images/speaker-7-mock-img.png"
-                    alt="Спикер"
-                    width="360"
-                    height="360"
-                  >
+                  <picture>
+                    <source
+                      srcset="./assets/images/speaker-7-mock-img.webp"
+                      type="image/webp"
+                    >
+                    <img
+                      src="./assets/images/speaker-7-mock-img.png"
+                      alt="Спикер"
+                      width="360"
+                      height="360"
+                    >
+                  </picture>
                   <span class="speaker-card__name">
                     Екатерина Алиева
                   </span>

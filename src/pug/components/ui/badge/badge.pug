@@ -6,7 +6,10 @@ mixin badge(data)
           img(src=`./assets/images/${icon}.svg` alt="Иконка" width="40" height="40")
 
     if data.img
-      img(src=`./assets/images/${data.img.name}` alt= data.img.alt width= data.img.width height= data.img.height)
+      picture
+        source(srcset=`./assets/images/${data.img.name}.webp` type="image/webp")
+        img(src=`./assets/images/${data.img.name}.png` alt= data.img.alt width= data.img.width height= data.img.height)
+
 
     if data.content
       .badge__content
