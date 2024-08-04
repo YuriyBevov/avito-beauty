@@ -1,0 +1,42 @@
+.schedule {
+  @extend %section-outer-offset;
+  @extend %section-inner-offset;
+
+  &__header {
+    @extend %flex-column;
+
+    gap: var(--space-xxl);
+    margin-bottom: clamp(40px, 4vw, 70px);
+
+    .base-title {
+      font-weight: var(--fw-m);
+    }
+  }
+
+  &__list {
+    @extend %list-reset;
+    @extend %flex-column;
+
+    margin-bottom: clamp(40px, 4vw, 70px);
+  }
+
+  &__list-item {
+    padding: clamp(20px, 3.6vw, 30px) 0;
+    border-top: 1px solid var(--white);
+
+    &:last-child {
+      border-bottom: 1px solid var(--white);
+    }
+  }
+
+  &__footer {
+    @extend %flex-align;
+
+    justify-content: center;
+    gap: 24px;
+
+    @container container (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+}

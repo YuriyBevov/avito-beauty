@@ -6,7 +6,8 @@
   width: fit-content;
   min-width: 50px;
   min-height: 48px;
-  font-size: clamp(18px, 3vw, 0.212em);
+  font-size: clamp(16px, 3vw, 0.212em);
+  text-align: center;
   padding: var(--space-xs) var(--space-m);
   border-radius: 30px;
   background-color: var(--primary);

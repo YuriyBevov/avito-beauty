@@ -1,1 +1,17 @@
 footer.footer
+  .container
+    .footer__top
+      include ../logo/logo
+
+      .footer__side
+        +main-link({
+          icon: 'offline',
+          text: 'Зарегистрироваться на&nbsp;мероприятие',
+          modifier: 'bg-success'
+        })
+        +main-link({
+          icon: 'online',
+          text: 'Зарегистрироваться на&nbsp;онлайн-трансляцию'
+        })
+    .footer__bottom
+      span.footer__copyrights 2024. Все права защищены.

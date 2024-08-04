@@ -1,0 +1,51 @@
+include ../../components/ui/main-link/main-link
+include ../../components/ui/schedule-card/schedule-card
+
+section.schedule
+  .container
+    .schedule__header
+      h2.base-title Программа мероприятия
+      p.base-text По всем вопросам обращайтесь к организаторам конференции.
+    .schedule__content
+      ul.schedule__list
+        li.schedule__list-item
+          +schedule-card({
+            date: '05/09',
+            time: '13:00-14:00',
+            text: 'Сбор гостей, легкий велком с полезными и вкусными закусками, работают скетчисты',
+          })
+        li.schedule__list-item
+          +schedule-card({
+            date: '05/09',
+            time: '14:00-16:00',
+            text: 'Деловая часть 1.<br>Выступление внутренних спикеров Авито',
+            bgColor: 'bg-success'
+          })
+        li.schedule__list-item
+          +schedule-card({
+            date: '05/09',
+            time: '16:00-16:30',
+            text: 'Кофе-брейк',
+            bgColor: 'bg-info'
+          })
+        li.schedule__list-item
+          +schedule-card({
+            date: '05/09',
+            time: '16:30-18:00',
+            text: 'Деловая часть 2.',
+            bgColor: 'bg-danger'
+          })
+        li.schedule__list-item
+          +schedule-card({
+            date: '05/09',
+            time: '18:00-23:00',
+            text: 'Нетворкинг, фуршет, играет DJ, работают скетчисты и вечерние активности',
+          })
+    .schedule__footer
+      +main-link({
+        text: 'Зарегистрироваться на&nbsp;мероприятие',
+        modifier: 'bg-success'
+      })
+      +main-link({
+        text: 'Зарегистрироваться на&nbsp;онлайн-трансляцию'
+      })

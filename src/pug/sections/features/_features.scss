@@ -3,7 +3,19 @@
   @extend %section-inner-offset;
 
   &__header {
-    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xxl);
+    margin-bottom: clamp(30px, 7vw, 100px);
+
+    @container container (max-width: 1240px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .base-title {
+      text-wrap: initial;
+    }
   }
 
   &__list {
@@ -11,11 +23,16 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: clamp(30px, 4vw, 70px);
+    gap: clamp(30px, 4vw, var(--space-xxxl));
+    margin-bottom: clamp(40px, 4vw, 70px);
+
+    @container container (max-width: 667px) {
+      grid-template-columns: 1fr;
+    }
 
     &-item {
       height: 100%;
+      container: feature-card-container / inline-size;
     }
   }
 
@@ -24,5 +41,9 @@
 
     justify-content: center;
     gap: 24px;
+
+    @container container (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 }

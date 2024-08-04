@@ -1,0 +1,28 @@
+.stream {
+  @extend %section-outer-offset;
+  @extend %section-inner-offset;
+
+  &__header {
+    @extend %flex-column;
+
+    gap: var(--space-xxl);
+
+    .base-title {
+      font-weight: var(--fw-m);
+    }
+
+    margin-bottom: clamp(40px, 4vw, 70px);
+  }
+
+  &__content {
+    background-color: #2a2a2a;
+
+    iframe {
+      display: flex;
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      aspect-ratio: 2/1;
+    }
+  }
+}

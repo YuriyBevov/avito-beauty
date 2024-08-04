@@ -1,3 +1,50 @@
 .footer {
-  background-color: white;
+  padding: var(--space-xl) 0;
+  background-color: transparent;
+  container: header / inline-size;
+
+  &__top {
+    @extend %flex-align;
+
+    flex-wrap: wrap;
+    gap: var(--space-l);
+    padding: var(--space-xxl) 0;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  &__side {
+    @extend %flex-wrap;
+
+    gap: clamp(var(--space-s), 3vw, var(--space-l));
+
+    .main-link {
+      svg {
+        display: none;
+      }
+    }
+
+    @container header (max-width: 1240px) {
+      .main-link {
+        svg {
+          display: block;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: var(--space-xxl) 0;
+    border-top: 1px solid var(--white);
+  }
+
+  &__copyrights {
+    font-size: 14px;
+  }
 }

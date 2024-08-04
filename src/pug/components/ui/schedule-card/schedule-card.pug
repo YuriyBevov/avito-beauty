@@ -1,0 +1,14 @@
+include ../badge/badge
+
+mixin schedule-card(data)
+  .schedule-card
+    .schedule-card__datetime
+      span.schedule-card__date!= data.date
+      +badge({
+        content: {
+          text: data.time
+        },
+        bgColor: data.bgColor
+      })
+    .schedule-card__content
+      span.schedule-card__text!= data.text

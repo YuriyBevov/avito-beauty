@@ -1,0 +1,42 @@
+.schedule-card {
+  @extend %flex-align;
+
+  gap: clamp(20px, 15vw, 300px);
+
+  @container container (max-width: 534px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-l);
+  }
+
+  &__datetime {
+    @extend %flex-column;
+
+    gap: 8px;
+  }
+
+  &__date {
+    font-size: clamp(16px, 3vw, 36px);
+    font-weight: var(--fw-m);
+  }
+
+  &__text {
+    display: inline-block;
+    width: 100%;
+    font-size: clamp(16px, 3vw, 36px);
+    font-weight: var(--fw-m);
+    text-wrap: initial;
+  }
+
+  .badge {
+    padding: 8px 16px;
+    font-weight: var(--fw-m);
+
+    &__content {
+      span {
+        font-family: var(--primary-font);
+        text-wrap: nowrap;
+      }
+    }
+  }
+}

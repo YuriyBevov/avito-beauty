@@ -13,4 +13,9 @@
     height: auto;
     object-fit: contain;
   }
+
+  @container feature-card-container (min-width: 520px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
