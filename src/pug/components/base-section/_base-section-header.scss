@@ -1,0 +1,10 @@
+.base-section-header {
+  @extend %flex-column;
+
+  gap: var(--space-xxl);
+  margin-bottom: clamp(40px, 4vw, 70px);
+
+  .base-title {
+    font-weight: var(--fw-m);
+  }
+}

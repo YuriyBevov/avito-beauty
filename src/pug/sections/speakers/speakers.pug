@@ -1,9 +1,12 @@
 include ../../components/ui/speaker-card/speaker-card
+include ../../components/base-section/base-section-header
 
 section.speakers
   .container
-    .speakers__header
-      h2.base-title Спикеры
+
+    +base-section-header({
+      title: 'Спикеры',
+    })
 
     .speakers__content
       ul.speakers__list

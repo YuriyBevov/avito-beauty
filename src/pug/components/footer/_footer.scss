@@ -40,6 +40,11 @@
   }
 
   &__bottom {
+    @extend %flex-wrap;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-l);
     padding: var(--space-xxl) 0;
     border-top: 1px solid var(--white);
   }

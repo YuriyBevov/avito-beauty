@@ -2,11 +2,25 @@
   @extend %section-outer-offset;
   @extend %section-inner-offset;
 
-  &__header {
+  // &__header {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   gap: var(--space-xxl);
+  //   margin-bottom: clamp(30px, 7vw, 100px);
+
+  //   @container container (max-width: 1240px) {
+  //     grid-template-columns: 1fr;
+  //     gap: 24px;
+  //   }
+
+  //   .base-title {
+  //     text-wrap: initial;
+  //   }
+  // }
+
+  .base-section-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xxl);
-    margin-bottom: clamp(30px, 7vw, 100px);
 
     @container container (max-width: 1240px) {
       grid-template-columns: 1fr;

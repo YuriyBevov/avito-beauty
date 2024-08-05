@@ -5,11 +5,11 @@
   gap: var(--space-s);
   width: fit-content;
   min-width: 50px;
-  min-height: 48px;
-  font-size: clamp(16px, 3vw, 0.212em);
+  min-height: 64px;
+  font-size: clamp(16px, 1.2vw, 28px);
   text-align: center;
   padding: var(--space-xs) var(--space-m);
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: var(--primary);
   color: var(--dark);
 }

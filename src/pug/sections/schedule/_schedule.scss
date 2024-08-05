@@ -2,17 +2,6 @@
   @extend %section-outer-offset;
   @extend %section-inner-offset;
 
-  &__header {
-    @extend %flex-column;
-
-    gap: var(--space-xxl);
-    margin-bottom: clamp(40px, 4vw, 70px);
-
-    .base-title {
-      font-weight: var(--fw-m);
-    }
-  }
-
   &__list {
     @extend %list-reset;
     @extend %flex-column;
@@ -29,14 +18,22 @@
     }
   }
 
-  &__footer {
-    @extend %flex-align;
+  .announce {
+    grid-template-columns: min-content;
+    margin-bottom: 32px;
 
-    justify-content: center;
-    gap: 24px;
+    &__date {
+      font-size: clamp(48px, 10vw, 5em);
 
-    @container container (max-width: 767px) {
-      flex-direction: column;
+      @container container (max-width: 534px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__date,
+    &__place,
+    &__address {
+      grid-column: initial;
     }
   }
 }

@@ -1,12 +1,16 @@
 include ../../components/ui/main-link/main-link
 include ../../components/ui/schedule-card/schedule-card
+include ../../components/base-section/base-section-header
+include ../../components/base-section/base-section-footer
 
 section.schedule
   .container
-    .schedule__header
-      h2.base-title Программа мероприятия
-      p.base-text По всем вопросам обращайтесь к организаторам конференции.
+    include ../../components/announce-block/announce
+    +base-section-header({
+      title: 'Программа мероприятия',
+    })
     .schedule__content
+
       ul.schedule__list
         li.schedule__list-item
           +schedule-card({
@@ -41,11 +45,5 @@ section.schedule
             time: '18:00-23:00',
             text: 'Нетворкинг, фуршет, играет DJ, работают скетчисты и вечерние активности',
           })
-    .schedule__footer
-      +main-link({
-        text: 'Зарегистрироваться на&nbsp;мероприятие',
-        modifier: 'bg-success'
-      })
-      +main-link({
-        text: 'Зарегистрироваться на&nbsp;онлайн-трансляцию'
-      })
+
+    +base-section-footer()

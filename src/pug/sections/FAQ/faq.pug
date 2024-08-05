@@ -1,0 +1,29 @@
+include ../../components/base-section/base-section-header
+include ../../components/ui/main-accordeon/main-accordeon
+
+section.faq
+  .container
+    +base-section-header({
+      title: 'FAQ',
+    })
+
+    +main-accordeon({
+      items: [
+        {
+          title: 'Особенности регистрации',
+          text: 'lorem ipsum'
+        },
+        {
+          title: 'Очное посещение мероприятия',
+          text: 'lorem ipsum'
+        },
+        {
+          title: 'Место проведения',
+          text: 'Bounce<br>г. Москва, 3-я ул. Ямского поля, д. 2 к 22'
+        },
+        {
+          title: 'Будет ли онлайн-трансляция',
+          text: 'lorem ipsum'
+        },
+      ]
+    })

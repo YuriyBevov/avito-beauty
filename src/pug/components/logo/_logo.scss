@@ -1,7 +1,8 @@
 .logo {
   @extend %flex-center;
 
-  width: clamp(100px, 20vw, 240px);
+  width: clamp(130px, 40vw, 400px);
+  height: auto;
 
   img {
     width: 100%;

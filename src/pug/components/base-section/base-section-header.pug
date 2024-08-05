@@ -1,0 +1,5 @@
+mixin base-section-header(data)
+  .base-section-header
+    h2.base-title!= data.title
+    if data.description
+      p.base-text!= data.description
