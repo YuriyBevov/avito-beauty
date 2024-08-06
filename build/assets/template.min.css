@@ -1683,7 +1683,8 @@ picture {
   font-size: clamp(20px, 2vw, 36px);
   margin: 0;
   margin-right: auto;
-  max-width: 54vw;
+  width: 54vw;
+  max-width: 850px;
 }
 @container container (max-width: 1024px) {
   .base-section-footer:has(.base-text) .base-text {
