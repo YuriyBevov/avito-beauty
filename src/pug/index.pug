@@ -2,9 +2,8 @@ extends layouts/main-layout.pug
 
 block variables
   -
-    const title = "test_title"
-    const description = "test_description"
-    const keywords = "test_keywords"
+    const title = "Первая конференция Авито Услуг для красоты и здоровья"
+    const description = "Конференция Авито Услуг для красоты и здоровья"
     //- Дополнительные файлы стили для КОНКРЕТНОЙ страницы
     //- const styleFileNames = ['inner']
 
@@ -15,6 +14,7 @@ block content
   include ./sections/speakers/speakers
   include ./sections/stream/stream
   include ./sections/faq/faq
+  include ./sections/subscribe/subscribe
 
 block modals
   //- Модальные окна используемые ТОЛЬКО на этой странице

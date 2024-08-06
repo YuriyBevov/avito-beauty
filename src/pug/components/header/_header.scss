@@ -1,11 +1,16 @@
 .header {
-  padding: var(--space-xxl) 0;
-  background-color: transparent;
+  position: sticky;
+  top: 0;
+  padding: var(--space-xl) 0;
+  background-color: var(--dark);
   container: header / inline-size;
+  z-index: 3;
+  margin-bottom: clamp(10px, 1.8vw, 40px);
 
   &__container {
-    @extend %flex-align;
+    @extend %flex-wrap;
 
+    align-items: center;
     gap: var(--space-l);
   }
 
@@ -26,6 +31,8 @@
 
     @container header (max-width: 1240px) {
       .main-link {
+        min-height: 50px;
+
         svg {
           display: block;
         }
@@ -34,6 +41,14 @@
           display: none;
         }
       }
+    }
+  }
+
+  .main-title {
+    font-size: clamp(32px, 4.8vw, 5.75em);
+
+    @container header (max-width: 534px) {
+      font-size: 18px;
     }
   }
 }

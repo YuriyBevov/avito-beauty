@@ -1,0 +1,16 @@
+include ../../components/base-section/base-section-header
+include ../../components/ui/main-link/main-link
+
+section.subscribe
+  .container
+
+    +base-section-header({
+      title: 'Подпишись на наш Telegram - канал Авито красота и здоровье:',
+    })
+
+    +main-link({
+      url: "https://t.me/moe_delo_s_avito_krasota",
+      icon: 'tg',
+      text: 'Помогаем развивать свое дело и работать с клиентами',
+      modifier: 'bg-info'
+    })

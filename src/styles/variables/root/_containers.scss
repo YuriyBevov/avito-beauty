@@ -3,7 +3,7 @@
   --container-offset: clamp(20px, 4vw, 60px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --content-fluid-width: 1800px;
-  --container-fluid-offset: clamp(20px, 4vw, 60px);
+  --container-fluid-offset: clamp(20px, 2.6vw, 60px);
   --container-fluid-width: calc(
     var(--content-fluid-width) + (var(--container-offset) * 2)
   );

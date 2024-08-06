@@ -28,6 +28,8 @@
 
     @container header (max-width: 1240px) {
       .main-link {
+        min-height: 50px;
+
         svg {
           display: block;
         }
@@ -44,12 +46,13 @@
 
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-l);
+    gap: var(--space-l) var(--space-xxl);
     padding: var(--space-xxl) 0;
     border-top: 1px solid var(--white);
   }
 
-  &__copyrights {
+  &__copyrights,
+  &__privacy {
     font-size: 14px;
   }
 }
