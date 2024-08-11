@@ -2,30 +2,10 @@
   @extend %section-outer-offset;
   @extend %section-inner-offset;
 
-  // &__header {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  //   gap: var(--space-xxl);
-  //   margin-bottom: clamp(30px, 7vw, 100px);
-
-  //   @container container (max-width: 1240px) {
-  //     grid-template-columns: 1fr;
-  //     gap: 24px;
-  //   }
-
-  //   .base-title {
-  //     text-wrap: initial;
-  //   }
-  // }
-
   .base-section-header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    @container container (max-width: 1240px) {
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
+    grid-template-columns: 1fr;
+    gap: 24px;
 
     .base-title {
       text-wrap: initial;
@@ -37,7 +17,7 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: clamp(30px, 4vw, var(--space-xxxl));
+    gap: clamp(24px, 3.6vw, var(--space-xxl));
     margin-bottom: clamp(40px, 4vw, 70px);
 
     @container container (max-width: 667px) {
@@ -50,14 +30,14 @@
     }
   }
 
-  &__footer {
-    @extend %flex-align;
+  // &__footer {
+  //   @extend %flex-align;
 
-    justify-content: center;
-    gap: 24px;
+  //   justify-content: center;
+  //   gap: 24px;
 
-    @container container (max-width: 767px) {
-      flex-direction: column;
-    }
-  }
+  //   @container container (max-width: 767px) {
+  //     flex-direction: column;
+  //   }
+  // }
 }

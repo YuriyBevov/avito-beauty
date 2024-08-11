@@ -14,36 +14,33 @@ section.schedule
       ul.schedule__list
         li.schedule__list-item
           +schedule-card({
-            date: '05/09',
             time: '13:00-14:00',
             text: 'Сбор&nbsp;гостей, Легкий&nbsp;велком, Фотосессия',
+            bgColor: 'bg-info'
           })
         li.schedule__list-item
           +schedule-card({
-            date: '05/09',
             time: '14:00-16:00',
             text: 'Деловая часть&nbsp;1.<br>Выступление экспертов Авито и&nbsp;партнеров',
-            bgColor: 'bg-success'
+            bgColor: 'bg-info'
           })
         li.schedule__list-item
           +schedule-card({
-            date: '05/09',
             time: '16:00-16:30',
             text: 'Кофе-брейк',
             bgColor: 'bg-info'
           })
         li.schedule__list-item
           +schedule-card({
-            date: '05/09',
             time: '16:30-18:00',
             text: 'Деловая часть&nbsp;2.',
-            bgColor: 'bg-danger'
+            bgColor: 'bg-info'
           })
         li.schedule__list-item
           +schedule-card({
-            date: '05/09',
-            time: '18:00-23:00',
+            time: '18:00-21:00',
             text: 'Фуршет и вечеринка для&nbsp;друзей Авито&nbsp;Услуг',
+            bgColor: 'bg-info'
           })
 
     +base-section-footer('Событие, которое нельзя пропустить')

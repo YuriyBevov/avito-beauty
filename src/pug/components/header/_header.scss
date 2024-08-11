@@ -32,9 +32,12 @@
     @container header (max-width: 1240px) {
       .main-link {
         min-height: 50px;
+        padding: 5px;
+        justify-content: center;
 
         svg {
           display: block;
+          fill: white;
         }
 
         span {

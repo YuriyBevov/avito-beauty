@@ -1,4 +1,8 @@
 mixin feature-card(data)
   .feature-card
-    img(src=`./assets/images/icon-${data.icon}.svg` alt="Иконка" width="60" height="60")
+    .feature-card__header
+      picture
+        source(srcset=`./assets/images/${data.img.name}.webp` type="image/webp")
+        img(src=`./assets/images/${data.img.name}.png` alt= data.img.title width="510" height="240")
+      span!= data.img.title
     span.base-text!= data.text

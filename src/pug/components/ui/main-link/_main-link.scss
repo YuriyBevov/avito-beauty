@@ -8,8 +8,15 @@
   min-height: 64px;
   font-size: clamp(16px, 1.2vw, 28px);
   text-align: center;
-  padding: var(--space-xs) var(--space-m);
+  padding: 8px 24px 10px;
   border-radius: 50px;
   background-color: var(--primary);
-  color: var(--dark);
+  color: var(--white);
+  border: 4px solid transparent;
+
+  &.outlined {
+    color: var(--primary);
+    border-color: var(--primary);
+    background-color: transparent;
+  }
 }

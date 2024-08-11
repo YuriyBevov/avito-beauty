@@ -11,6 +11,8 @@
     aspect-ratio: 1 / 1;
     width: 100%;
     height: auto;
+    border-radius: 30px;
+    overflow: hidden;
 
     img {
       @extend %flex-center;
@@ -25,12 +27,17 @@
   &__name {
     font-weight: var(--fw-m);
     font-size: clamp(16px, 3vw, var(--fs-sm));
+    text-transform: uppercase;
   }
 
   &__text {
     font-size: clamp(16px, 3vw, var(--fs-sm));
     color: #595959;
-    // color: var(--white);
+  }
+
+  .logo {
+    width: 70%;
+    max-width: 200px;
   }
 
   .badge {

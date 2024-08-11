@@ -5,12 +5,8 @@ mixin speaker-card(data)
     picture
       source(srcset=`./assets/images/${data.img}.webp` type="image/webp")
       img(src=`./assets/images/${data.img}.png` alt="Спикер" width="360" height="360")
-    //- img(src=`./assets/images/${data.img}` alt="Спикер" width="360" height="360")
+
+    include ../../logo/logo
 
     span.speaker-card__name!= data.name
-    +badge({
-      content: {
-        text: data.badge
-      }
-    })
     span.speaker-card__text!= data.text

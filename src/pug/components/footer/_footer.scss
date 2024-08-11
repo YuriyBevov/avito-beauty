@@ -15,31 +15,31 @@
     margin-right: auto;
   }
 
-  &__side {
-    @extend %flex-wrap;
+  // &__side {
+  //   @extend %flex-wrap;
 
-    gap: clamp(var(--space-s), 3vw, var(--space-l));
+  //   gap: clamp(var(--space-s), 3vw, var(--space-l));
 
-    .main-link {
-      svg {
-        display: none;
-      }
-    }
+  //   .main-link {
+  //     svg {
+  //       display: none;
+  //     }
+  //   }
 
-    @container header (max-width: 1240px) {
-      .main-link {
-        min-height: 50px;
+  //   @container header (max-width: 1240px) {
+  //     .main-link {
+  //       min-height: 50px;
 
-        svg {
-          display: block;
-        }
+  //       svg {
+  //         display: block;
+  //       }
 
-        span {
-          display: none;
-        }
-      }
-    }
-  }
+  //       span {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
 
   &__bottom {
     @extend %flex-wrap;
